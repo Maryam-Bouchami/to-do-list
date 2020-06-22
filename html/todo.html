@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="../css/todo.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="titleBloc"><img src="../images/pin.png" width="36px" height="36px"><h1>TO DO LIST</h1></div>
+	<div class="content">
+		
+		<div class="add-list">
+			<img src="../images/supprimer.png" id="hideForm" title="Fermer">
+			<form class="addForm">
+				<input type="text" name="listTitre" placeholder="Titre">
+				<input type="text" name="elt1" id="elt1" class="eltinput" placeholder="Ajouter un élement" >
+				<a href="#" class="addElt" title="Ajouter une tache">+</a>
+				<input type="image" id="image" alt="Enregistrer"  class="submitInput" src="../images/save.png" title="Enregistrer">
+
+
+				<div class="colors">
+					<ul class="colors-list" title="Choisir une couleur">
+						<li><a id="blue"><img src="../images/blue.png" ></a></li>
+						<li><a id="yellow"><img src="../images/yellow.png"></a></li>
+						<li><a id="pink"><img src="../images/pink.png"></a></li>
+						<li><a id="green" ><img src="../images/green.png"></a></li>
+						<li><a id="orange"><img src="../images/orange.png"></a></li>
+					</ul>
+				</div>
+			</form>
+
+
+
+
+		</div>
+		<div class="btnCreerBloc"><a href="#" title="Ajouter une liste">Ajouter une liste</a></div>
+		<div class="listsContainer">
+<!--
+			<div class="oneList">
+<div><img src="../images/pin.png" width="36px" height="36px"><h3>Ma liste du weekend</h3></div>
+				<ul class="myList">
+					<li class="listItem"><input type="checkbox" class="taskDone"><span>Nettoyer le jardin</span></li>
+					<li class="listItem">Ranger les affaires
+					<li>
+					<li class="listItem">Cuisiner</li>
+					<li class="listItem">Marcher</li>
+					<li class="listItem">Tache </li>
+					<li class="listItem">Tache</li>
+				</ul>
+				<div class="modif">
+					
+					<a href="#" class="editList"><img src="../images/edit.png"></a>
+					<a href="#" class="delitList"><img src="../images/corbeille.png"></a>
+				</div>
+			</div>
+			
+		-->
+		</div>
+
+	</div>
+
+
+
+
+
+<script type="application/javascript" src="../js/ajax.js"></script>
+<script type="application/javascript" src="../js/todo.js?n="+Math.random()></script>
+</body>
+
+</html>

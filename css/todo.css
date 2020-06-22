@@ -1,0 +1,188 @@
+@font-face{
+	 font-family:"Rancho";
+	 src:url(../fontFamily/Rancho.ttf) format("truetype");
+	
+}
+
+body{
+	font-family: Rancho;
+	font-size: 	1.4em
+}
+h1{
+	text-align: center;
+	padding: 2px;
+}
+.titleBloc{
+	display: flex;
+	justify-content: center;
+	height:80px;
+	align-items: center;
+}
+.content{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+	
+}
+
+.add-list{
+	grid-column: 3/5;
+    border:2px solid black;
+	border-radius: 14px;
+}
+
+
+form.addForm{
+	width:90%;
+    margin:5%;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+	
+}
+.addForm input {
+	grid-column: 2/8;
+	border-color: transparent;
+	height:30px;
+}
+
+
+input[type="image"]{
+	grid-column:1/3;
+	padding-top:18px;
+	
+}
+
+.colors{
+	grid-column:6/span 6;
+	display:flex;
+	align-items: center;
+}
+
+.colors-list{
+	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	height: 35px;
+	background-color: white;
+}
+
+#hideForm{
+	float: right;
+}
+
+.addElt,.delElt{
+	text-decoration:none;
+	font-weight:bolder;
+	font-size:1.15em;
+	font-family: sans-serif;
+	height:35px;
+	line-height: 1.75em;
+	
+}
+
+.addElt{
+	color:forestgreen;
+	grid-column: 1/span1;
+}
+.delElt{
+	color:#da0000;
+}
+.listsContainer{
+	grid-column: 3/span 7;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+.myList{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	width:75%;
+}
+.oneList{
+	display:flex;
+	flex-direction: column;
+    align-items: flex-start;
+	min-width: 260px;
+	background-color: burlywood;
+    margin-top: 50px;
+	height:min-content;
+	
+
+}
+.myList li{
+	display: flex;
+    justify-content: flex-start;
+	align-items: center;
+
+}
+
+.modif{
+display: flex;
+width: 100%;
+justify-content: flex-end;
+}
+
+
+
+.taskDone{
+	opacity: 0.7;}
+
+.btnCreerBloc{
+	grid-column: 2/span 2;
+	
+}
+
+.btnCreerBloc a{
+	text-decoration: none;
+	background-color: DarkSlateGray;
+	color:white;
+	display: block;
+	height: 35px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 1.4em;
+	padding:1px;
+	max-width: 150px;
+}
+.desableLink{
+	pointer-events: none;  
+}
+
+h3{
+	align-self: center;
+}
+
+
+
+
+
+@media(max-width:767.98px){
+	body{
+		font-size: 1.2em;
+	}
+	.oneList{
+		min-width:190px;
+	}
+	.btnCreerBloc{
+		grid-column:2/span 3;
+		
+	
+	}
+}
+@media(max-width:575.98px){
+	body{
+		font-size: 0.9em;
+	}
+	.btnCreerBloc a{
+		
+		height: 25px !important;
+		line-height:1.3em !important;
+	
+	}
+
+}
